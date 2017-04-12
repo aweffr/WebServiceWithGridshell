@@ -1,10 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Index</title>
-</head>
-<body>
-<h1>Hello World!</h1>
-</body>
-</html>
+{% extends "base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block title %}网桥小程序{% endblock %}
+
+{% block page_content %}
+<div class="page-header">
+    <h1>请输入初始控制点，以逗号分隔</h1>
+</div>
+{{ wtf.quick_form(point_form) }}
+{% if control_points %}
+<h3>你输入的控制点为</h3>
+    <p>{{ control_points }}</p>
+{% else %}
+{% endif %}
+{% if end_points %}
+<h3>你输入的首尾边界为</h3>
+    <p>{{ end_points }}</p>
+{% else %}
+{% endif %}
+{% endblock %}
