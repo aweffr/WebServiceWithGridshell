@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="ProjectRootManager" version="2" project-jdk-name="Python 2.7.13 (H:\Anaconda3\envs\py27\python.exe)" project-jdk-type="Python SDK" />
+  <component name="IpnbSettings">
+    <option name="workingDirectory" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectRootManager" version="2" project-jdk-name="Python 2.7.12 virtualenv at C:\Users\aweff\Documents\32.PythonWeb\myflask\WebServiceWithGridshell\venv (1)" project-jdk-type="Python SDK" />
 </project>

@@ -1,6 +1,6 @@
 {% extends "bootstrap/base.html" %}
 
-{% block title %}Flasky{% endblock %}
+{% block title %}网壳小程序{% endblock %}
 
 {% block head %}
 {{ super() }}
@@ -25,15 +25,29 @@
                 <li><a href="/">主页</a></li>
             </ul>
             <ul class="nav navbar-nav">
-                <li><a href="/user/aweffr">计算结果</a></li>
+                <li><a href="/confirm">初始布置预览</a></li>
+            </ul>
+            <ul class="nav navbar-nav">
+                <li><a href="/result">计算结果</a></li>
+            </ul>
+            <ul class="nav navbar-nav">
+                <li><a href="/clear">重置</a></li>
             </ul>
         </div>
     </div>
 </div>
 {% endblock %}
 
+
 {% block content %}
 <div class="container">
+    {% for message in get_flashed_messages() %}
+    <div class="alert alert-warning">
+        <button type="button" class="close" data-dismiss="alert">&times;</button>
+        {{ message }}
+    </div>
+    {% endfor %}
+
     {% block page_content %}{% endblock %}
 </div>
 {% endblock %}

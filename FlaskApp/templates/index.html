@@ -1,21 +1,22 @@
 {% extends "base.html" %}
 {% import "bootstrap/wtf.html" as wtf %}
 
-{% block title %}网桥小程序{% endblock %}
+{% block title %}网壳小程序{% endblock %}
 
 {% block page_content %}
-<div class="page-header">
-    <h1>请输入初始控制点，以逗号分隔</h1>
-</div>
-{{ wtf.quick_form(point_form) }}
-{% if control_points %}
-<h3>你输入的控制点为</h3>
-    <p>{{ control_points }}</p>
-{% else %}
-{% endif %}
-{% if end_points %}
-<h3>你输入的首尾边界为</h3>
-    <p>{{ end_points }}</p>
-{% else %}
-{% endif %}
+    <div class="page-header">
+        <h1>请输入初始控制点，以逗号分隔</h1>
+    </div>
+
+    {% if point_form %}{{ wtf.quick_form(point_form) }} {% else %}{% endif %}
+    <p></p>
+    {% if control_points and end_points %}
+        <h3>输入的控制点:</h3>
+        <p>{{ control_points }}</p>
+        <h3>输入的首尾边界:</h3>
+        <p>{{ end_points }}</p>
+        <h3>是否进行计算</h3>
+        <button type="button" class="btn btn-default" onclick="window.location.assign('/confirm')">进行计算</button>
+    {% else %}
+    {% endif %}
 {% endblock %}

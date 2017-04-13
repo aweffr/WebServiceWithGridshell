@@ -9,7 +9,6 @@ from scipy import interpolate
 from scipy.optimize import brenth
 from operator import itemgetter, attrgetter
 
-
 def xlist(inlst):
     # inlst format:[(a1,b1), (a2,b2),....(an,bn)]
     # out format: [a1, a2, a3, ..., an]

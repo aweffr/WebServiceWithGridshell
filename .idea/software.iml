@@ -6,8 +6,16 @@
       <sourceFolder url="file://$MODULE_DIR$/FlaskApp/Backend" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/AbaqusFiles" />
     </content>
-    <orderEntry type="jdk" jdkName="Python 2.7.13 (H:\Anaconda3\envs\py27\python.exe)" jdkType="Python SDK" />
+    <orderEntry type="jdk" jdkName="Python 2.7.12 virtualenv at C:\Users\aweff\Documents\32.PythonWeb\myflask\WebServiceWithGridshell\venv (1)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+  <component name="TemplatesService">
+    <option name="TEMPLATE_CONFIGURATION" value="Jinja2" />
+    <option name="TEMPLATE_FOLDERS">
+      <list>
+        <option value="$MODULE_DIR$/FlaskApp/templates" />
+      </list>
+    </option>
   </component>
   <component name="TestRunnerService">
     <option name="projectConfiguration" value="Nosetests" />
